@@ -68,18 +68,18 @@ h2 {
 #index__heading {
   position: absolute;
   top: 50vh;
-  margin-top: -12rem;
+  margin-top: -15rem;
   left: 50vw;
   margin-left: -3.5rem;
   width: 65rem;
 }
 #index__heading h2 {
-  line-height: 3em;
-  font-size: 1.8em;
+  line-height: 3.5em;
+  font-size: 1.5em;
   font-weight: 100;
 }
 #index__heading h1 {
-  line-height: 1em;
+  line-height: 0.9em;
   letter-spacing: 2px;
 }
 
@@ -89,7 +89,7 @@ h2 {
   left: -5rem;
   width: 60rem;
   filter: grayscale(100%) brightness(0.7);
-  transform: rotate(-30deg);
+  transform: rotate(-35deg);
   z-index: -1;
 }
 
