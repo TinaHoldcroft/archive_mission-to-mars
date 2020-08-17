@@ -1,3 +1,11 @@
+#index {
+    hr {
+        margin-top: 1rem;
+        width: 50vw;
+        border-top: 1px solid #707070;
+        border-bottom: none;
+    }
+}
 .page-overview {
     position: absolute;
     top: 2.5rem;
@@ -24,7 +32,7 @@
     top: 50vh;
     margin-top: -13rem;
     left: 50vw;
-    margin-left: 2rem;
+    margin-left: -4rem;
     width: 65rem;
     h2 {
         line-height: 3.5em;
@@ -39,8 +47,8 @@
 #images__astronaut {
     position: absolute;
     top: -6rem;
-    left: -3rem;
-    width: 66rem;
+    left: -4rem;
+    width: 60rem;
     filter: grayscale(100%) brightness(0.70);
     transform: rotate(-35deg);
     z-index: -1;
