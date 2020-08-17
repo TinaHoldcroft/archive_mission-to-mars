@@ -1,3 +1,131 @@
+@import url("https://use.typekit.net/zxx6njz.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+p {
+  font-family: open-sans, sans-serif;
+}
+
+h1 {
+  font-family: abril-fatface, serif;
+}
+
+.search-container {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 100px;
+}
+.search-container input {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #242424;
+  color: #ffffff;
+  border-radius: 25px;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  padding-left: 2rem;
+  letter-spacing: 0.1em;
+}
+.search-container input:hover {
+  cursor: pointer;
+}
+.search-container input:focus {
+  width: 200px;
+  opacity: 1;
+  cursor: text;
+}
+.search-container input:focus ~ .search-icon {
+  right: -250px;
+  z-index: 6;
+}
+.search-container input:focus ~ .search-icon::before {
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+.search-container input:focus ~ .search-icon::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: #ffffff;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+.search-container input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.search-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+}
+.search-icon:hover {
+  cursor: pointer;
+}
+.search-icon::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  top: 14px;
+  left: 14px;
+  width: 8px;
+  height: 2px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.search-icon::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: all 0.5s;
+}
 
 /*# sourceMappingURL=styles.css.map */

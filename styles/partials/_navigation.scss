@@ -1,0 +1,97 @@
+.search-container {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    input {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background: #242424;
+        color: #ffffff;
+        border-radius: 25px;
+        transition: all 1s;
+        opacity: 0;
+        z-index: 5;
+        padding-left: 2rem;
+        letter-spacing: 0.1em;
+        &:hover { cursor: pointer; }
+        &:focus {
+            width: 200px;
+            opacity: 1;
+            cursor: text;
+        }
+        &:focus ~ .search-icon {
+            right: -250px;
+            z-index: 6;
+            &::before {
+                top: 0;
+                left: 0;
+                width: 25px;
+            }
+            &::after {
+                top: 0;
+                left: 0;
+                width: 25px;
+                height: 2px;
+                border: none;
+                background: #ffffff;
+                border-radius: 0%;
+                transform: rotate(-45deg);
+            }
+        }
+        &::placeholder {
+            color: #ffffff;
+            opacity: 0.5;
+        }
+    }
+}
+.search-icon {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    &:hover { cursor: pointer; }
+    &::before { //line
+        content: "";
+        position: absolute;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        top: 14px;
+        left: 14px;
+        width: 8px;
+        height: 2px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        transition: all .5s;
+    }
+    &::after { //circle
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: -5px;
+        right: 0;
+        bottom: 0;
+        left: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        transition: all .5s;
+    }
+}
