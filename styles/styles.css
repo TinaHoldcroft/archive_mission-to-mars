@@ -23,6 +23,74 @@ p {
 
 h1 {
   font-family: abril-fatface, serif;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.txt-red {
+  color: #A5161F;
+}
+
+.txt-xl {
+  font-size: 1.4em;
+  letter-spacing: 6px;
+}
+
+.page-overview {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  font-size: 0.7em;
+  line-height: 0.7em;
+  font-family: open-sans, sans-serif;
+  background-color: #A5161F;
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  z-index: 9;
+}
+.page-overview span {
+  font-weight: 900;
+}
+.page-overview span + span {
+  font-weight: 100;
+}
+
+#index__heading {
+  position: absolute;
+  top: 50vh;
+  margin-top: -12rem;
+  left: 50vw;
+  margin-left: -3.5rem;
+  width: 65rem;
+}
+#index__heading h2 {
+  line-height: 3em;
+  font-size: 1.8em;
+  font-weight: 100;
+}
+#index__heading h1 {
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+#images__astronaut {
+  position: absolute;
+  top: -4rem;
+  left: -5rem;
+  width: 60rem;
+  filter: grayscale(100%) brightness(0.7);
+  transform: rotate(-30deg);
+  z-index: -1;
 }
 
 .search-container {
