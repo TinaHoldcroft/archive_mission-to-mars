@@ -11,10 +11,8 @@
 }
 #index__heading {
     position: absolute;
-    top: 50vh;
-    margin-top: -15rem;
-    left: 50vw;
-    margin-left: -2rem;
+    top: 8.8rem;
+    left: 46.5vw;
     width: 65rem;
     cursor: default;
     h2 {
@@ -38,8 +36,8 @@
 }
 .topics-container {
     position: relative;
-    margin-top: 53vh;
-    margin-left: 45.2vw;
+    margin-top: 25.3rem;
+    margin-left: 43.6vw;
     width: 52vw;
     display: flex;
     flex-flow: row nowrap;
@@ -61,21 +59,19 @@
         font-weight: 100;
     }
     a:hover {
-        p {
-            opacity: 0.5;
-        }
+        p { opacity: 0.5; }
     }
 }
 #hr-topics {
     position: absolute;
-    top: 63.5vh;
-    left: 51vw;
+    top: 30.4rem;
+    left: 50vw;
     margin-left: -2.9rem;
 }
 .articals-container {
     position: relative;
-    margin-top: 3.5vh;
-    margin-left: 45vw;
+    margin-top: 1.8rem;
+    margin-left: 44vw;
     width: 52vw;
     display: flex;
     flex-flow: row nowrap;
@@ -89,12 +85,8 @@
         text-align: justify;
         font-weight: 100;
     }
-    div + div {
-        flex: 2;
-    }
-    div + div + div{
-        flex: 2;
-    }
+    div + div { flex: 2; }
+    div + div + div{ flex: 2; }
 }
 .articals-author {
     p { text-align: right; }
