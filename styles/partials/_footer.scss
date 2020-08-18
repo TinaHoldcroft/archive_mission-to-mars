@@ -1,7 +1,7 @@
 footer {
     position: absolute;
     display: flex;
-    top: 46.5vh;
+    top: 46vh;
     right: 2rem;
     align-items: center;
 }
@@ -51,7 +51,5 @@ footer {
         background-color: #ffffff;
         i { color: #ff0000; }    
     }
-    i { 
-        font-size: 1.3em;
-    }
+    i { font-size: 1.3em; }
 }

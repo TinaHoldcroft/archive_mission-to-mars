@@ -18,9 +18,7 @@
         font-weight: 100;
         cursor: default;
     }
-    a {
-       line-height: 0;
-    }
+    a { line-height: 0; }
 }
 nav {
     display: flex;
@@ -30,9 +28,7 @@ nav {
     right: 2vw;
     width: 40vw;
     z-index: 9;
-    ul {
-        list-style: none;
-    }
+    ul { list-style: none; }
     li {
         display: inline;
         margin-right: 1rem;
