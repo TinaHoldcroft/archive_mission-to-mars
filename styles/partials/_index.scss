@@ -1,39 +1,19 @@
 #index {
     hr {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         width: 50vw;
-        border-top: 1px solid #707070;
+        border-top: 0.5px solid #707070;
         border-bottom: none;
     }
 }
-.page-overview {
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    font-size: 0.7em;
-    line-height: 0.7em;
-    font-family: open-sans, sans-serif;
-    background-color: #A5161F;
-    padding-top: 0.4rem;
-    padding-left: 0.4rem;
-    padding-bottom: 0.5rem;
-    padding-right: 1rem;
-    z-index: 9;
-    span {
-        font-weight: 900;
-    }
-    span + span {
-        font-weight: 100;
-    }
-}
-
 #index__heading {
     position: absolute;
     top: 50vh;
-    margin-top: -13rem;
+    margin-top: -15rem;
     left: 50vw;
-    margin-left: -4rem;
+    margin-left: -3rem;
     width: 65rem;
+    cursor: default;
     h2 {
         line-height: 3.5em;
         font-size: 1.3em;
@@ -52,4 +32,68 @@
     filter: grayscale(100%) brightness(0.70);
     transform: rotate(-35deg);
     z-index: -1;
+}
+.topics-container {
+    position: relative;
+    margin-top: 53vh;
+    margin-left: 44vw;
+    width: 52vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    div {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        text-align: justify;
+        border-right: dashed 1.5px #242424;
+    }
+    div + div + div {
+        border-right: none;
+    }
+    a {
+        line-height: 1.2em;
+        font-size: 0.9em;
+    }
+}
+#hr-topics {
+    position: absolute;
+    top: 65.5vh;
+    left: 50vw;
+    margin-left: -2.9rem;
+}
+.articals-container {
+    position: relative;
+    margin-top: 3.5vh;
+    margin-left: 44vw;
+    width: 52vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    div {
+        flex: 1.4;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        text-align: justify;
+    }
+    div + div {
+        flex: 2;
+    }
+    div + div + div{
+        flex: 2;
+    }
+}
+.articals-author {
+    p { text-align: right; }
+    span {
+        font-weight: 900;
+    }
+    span + span {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 0.8em;
+    }
 }

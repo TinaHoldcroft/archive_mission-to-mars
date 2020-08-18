@@ -24,7 +24,7 @@ p {
 h1 {
   font-family: abril-fatface, serif;
   text-transform: uppercase;
-  font-size: 5.5em;
+  font-size: 5.7em;
   font-weight: 400;
   font-style: normal;
 }
@@ -44,41 +44,33 @@ h2 {
   letter-spacing: 6px;
 }
 
-#index hr {
-  margin-top: 1rem;
-  width: 50vw;
-  border-top: 1px solid #707070;
-  border-bottom: none;
+a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 2em;
+  font-family: open-sans, sans-serif;
+  font-size: 1em;
 }
 
-.page-overview {
-  position: absolute;
-  top: 2.5rem;
-  left: 0;
-  font-size: 0.7em;
-  line-height: 0.7em;
-  font-family: open-sans, sans-serif;
-  background-color: #A5161F;
-  padding-top: 0.4rem;
-  padding-left: 0.4rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  z-index: 9;
+a:hover {
+  opacity: 0.5;
 }
-.page-overview span {
-  font-weight: 900;
-}
-.page-overview span + span {
-  font-weight: 100;
+
+#index hr {
+  margin-top: 0.5rem;
+  width: 50vw;
+  border-top: 0.5px solid #707070;
+  border-bottom: none;
 }
 
 #index__heading {
   position: absolute;
   top: 50vh;
-  margin-top: -13rem;
+  margin-top: -15rem;
   left: 50vw;
-  margin-left: -4rem;
+  margin-left: -3rem;
   width: 65rem;
+  cursor: default;
 }
 #index__heading h2 {
   line-height: 3.5em;
@@ -100,11 +92,126 @@ h2 {
   z-index: -1;
 }
 
-.search-container {
+.topics-container {
   position: relative;
+  margin-top: 53vh;
+  margin-left: 44vw;
+  width: 52vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.topics-container div {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+  border-right: dashed 1.5px #242424;
+}
+.topics-container div + div + div {
+  border-right: none;
+}
+.topics-container a {
+  line-height: 1.2em;
+  font-size: 0.9em;
+}
+
+#hr-topics {
+  position: absolute;
+  top: 65.5vh;
+  left: 50vw;
+  margin-left: -2.9rem;
+}
+
+.articals-container {
+  position: relative;
+  margin-top: 3.5vh;
+  margin-left: 44vw;
+  width: 52vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.articals-container div {
+  flex: 1.4;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+}
+.articals-container div + div {
+  flex: 2;
+}
+.articals-container div + div + div {
+  flex: 2;
+}
+
+.articals-author p {
+  text-align: right;
+}
+.articals-author span {
+  font-weight: 900;
+}
+.articals-author span + span {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.page-overview {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  font-size: 0.7em;
+  line-height: 0.7em;
+  font-family: open-sans, sans-serif;
+  background-color: #A5161F;
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  z-index: 9;
+}
+.page-overview span {
+  font-weight: 900;
+}
+.page-overview span + span {
+  font-weight: 100;
+  cursor: default;
+}
+.page-overview a {
+  line-height: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 1rem;
+  right: 2vw;
+  width: 40vw;
+  z-index: 9;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  z-index: 9;
+}
+
+.search-container {
+  position: absolute;
+  top: -1rem;
+  right: 20rem;
   margin: auto;
-  width: 300px;
+  width: 0;
   height: 100px;
+  z-index: 9;
 }
 .search-container input {
   position: absolute;
@@ -120,7 +227,8 @@ h2 {
   background: #242424;
   color: #ffffff;
   border-radius: 25px;
-  transition: all 1s;
+  transition: width 0.5s, height 0.9s, transform 1.4s;
+  transform-style: preserve-3d;
   opacity: 0;
   z-index: 5;
   padding-left: 2rem;
@@ -130,23 +238,25 @@ h2 {
   cursor: pointer;
 }
 .search-container input:focus {
-  width: 200px;
+  width: 12rem;
+  margin-left: -8rem;
   opacity: 1;
   cursor: text;
 }
 .search-container input:focus ~ .search-icon {
-  right: -250px;
+  right: 0rem;
+  top: -2px;
   z-index: 6;
 }
 .search-container input:focus ~ .search-icon::before {
   top: 0;
   left: 0;
-  width: 25px;
+  width: 16px;
 }
 .search-container input:focus ~ .search-icon::after {
   top: 0;
   left: 0;
-  width: 25px;
+  width: 16px;
   height: 2px;
   border: none;
   background: #ffffff;
@@ -156,6 +266,7 @@ h2 {
 .search-container input::placeholder {
   color: #ffffff;
   opacity: 0.5;
+  font-size: 1em;
 }
 
 .search-icon {
@@ -180,8 +291,8 @@ h2 {
   margin: auto;
   right: 0;
   bottom: 0;
-  top: 14px;
-  left: 14px;
+  top: 12px;
+  left: 12px;
   width: 8px;
   height: 2px;
   background: #ffffff;
@@ -196,11 +307,104 @@ h2 {
   right: 0;
   bottom: 0;
   left: -5px;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   transition: all 0.5s;
+}
+
+.--show {
+  visibility: visible;
+}
+
+.--hide {
+  visibility: hidden;
+}
+
+#searchTable {
+  position: absolute;
+  top: 5rem;
+  left: 50vw;
+  margin-left: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #242424;
+  opacity: 1;
+  z-index: 6;
+  border-radius: 25px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  top: 46.5vh;
+  right: 2rem;
+  align-items: center;
+}
+
+#SoMe {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#SoMe a {
+  margin-left: 0.3rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 50px;
+  line-height: 0;
+  color: #8d8d8d;
+}
+#SoMe #Codepen:hover {
+  background-color: #000000;
+  opacity: 1;
+}
+#SoMe #Codepen:hover i {
+  color: #ffffff;
+}
+#SoMe #Instagram:hover {
+  opacity: 1;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+#SoMe #Instagram:hover i {
+  color: #ffffff;
+}
+#SoMe #Twitter:hover {
+  opacity: 1;
+  background-color: #ffffff;
+}
+#SoMe #Twitter:hover i {
+  color: #00acee;
+}
+#SoMe #LinkedIn:hover {
+  opacity: 1;
+  background-color: #0072b1;
+}
+#SoMe #LinkedIn:hover i {
+  color: #ffffff;
+}
+#SoMe #Facebook:hover {
+  opacity: 1;
+  background-color: #ffffff;
+}
+#SoMe #Facebook:hover i {
+  color: #3b5998;
+}
+#SoMe #YouTube:hover {
+  opacity: 1;
+  background-color: #ffffff;
+}
+#SoMe #YouTube:hover i {
+  color: #ff0000;
+}
+#SoMe i {
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=styles.css.map */

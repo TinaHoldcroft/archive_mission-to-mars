@@ -6,7 +6,9 @@
         <!-- SEO -->
         <meta name="author" content="Tina Mary Holdcroft">
         <meta name="description" content="Microsite for NASA's Mars Exploration Program">
-        <meta name="keywords" content="Mars, Rover, Orbiter, NASA, Microsite, Mission to Mars, The Red Planet">
+		<meta name="keywords" content="Mars, Rover, Orbiter, NASA, Microsite, Mission to Mars, The Red Planet">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<script src="https://kit.fontawesome.com/a83d77d417.js" crossorigin="anonymous"></script>
@@ -20,14 +22,39 @@
         <header>
 			<!-- current page -->
 			<div class="page-overview">
-				<h3><span>NASA</span><span> | Mars Exploration Program</span></h3>
+				<h3><span><a href="#">NASA</a></span><span> | Mars Exploration Program</span></h3>
 			</div>
 			<!-- navigation -->
-			<!-- searchbutton -->
+			<nav>
+				<ul>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Life on Mars</a></li>
+				</ul>
+			</nav>
+			<!-- search button -->
 			<div class="search-container">
-				<input type="text" placeholder="Search">
+				<input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Search missions" title="Search for a mission">
 				<div class="search-icon"></div>
-			  </div>
+			</div>
+			<!-- search table -->
+			<table id="searchTable" class="--hide">
+				<tr><td><a href="#">The Mars 2020 rover</a></td></tr>
+				<tr><td><a href="#">The Exomars Program</a></td></tr>
+				<tr><td><a href="#">Maven</a></td></tr>
+				<tr><td><a href="#">Phoenix Scout</a></td></tr>
+				<tr><td><a href="#">Mars Reconnaissance Orbiter</a></td></tr>
+				<tr><td><a href="#">Sprit</a></td></tr>
+				<tr><td><a href="#">Opportunity</a></td></tr>
+				<tr><td><a href="#">Mars Express</a></td></tr>
+				<tr><td><a href="#">Mars Odyssey</a></td></tr>
+				<tr><td><a href="#">Mars Polar Lander</a></td></tr>
+				<tr><td><a href="#">Mars Climate Orbiter</a></td></tr>
+				<tr><td><a href="#">Pathfinder</a></td></tr>
+				<tr><td><a href="#">Mars Global Surveyor</a></td></tr>
+				<tr><td><a href="#">Mars Observer</a></td></tr>
+				<tr><td><a href="#">Viking 1 & 2</a></td></tr>
+				<tr><td><a href="#">Mariner</a></td></tr>
+		  	</table>
 		</header>
 		
 		<main id="index">
@@ -41,22 +68,31 @@
 				</h1>
 				<hr>
 			</div>
-			<!-- overview colums-->
-				<!-- view more-->
-			<!-- authour colum-->
-			<!-- main text-->
-			<!-- <div>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>-->
-			
+			<div class="topics-container">
+				<div><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></a></div>
+				<div><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></a></div>
+				<div><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></a></div>
+			</div>
+			<hr id="hr-topics">
+			<div class="articals-container">
+				<div class="articals-author"><p><span>Lorem ipsum dolor</span> <span>sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</span></p></div>
+				<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p></div>
+				<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. </p></div>
+			</div>
 		</main>
 
-        <footer>
- 
-		</footer>
+		<footer>
+            <div id="SoMe">
+                <a id="Instagram" target="_blank" href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+                <a id="Twitter" target="_blank" href="https://twitter.com/NASA"><i class="fab fa-twitter"></i></a>
+				<a id="LinkedIn" target="_blank" href="https://no.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+				<a id="Facebook" target="_blank" href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-square"></i></a>
+				<a id="YouTube" target="_blank" href="https://www.youtube.com/user/NASAtelevision?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
+            </div>		
+	  	</footer>
 
 		<!-- JavaScript -->
 		<script src="scripts/index.js"></script>
+		<script src="scripts/navigation.js"></script>
 	</body>	
 </html>
