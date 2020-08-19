@@ -72,7 +72,7 @@ a:hover {
 
 #index hr {
   margin-top: 0.5rem;
-  width: 50vw;
+  width: 42.7rem;
   border-top: 0.5px solid #707070;
   border-bottom: none;
 }
@@ -80,7 +80,7 @@ a:hover {
 #index__heading {
   position: absolute;
   top: 8.8rem;
-  left: 46.5vw;
+  left: 40rem;
   width: 65rem;
   cursor: default;
 }
@@ -105,13 +105,14 @@ a:hover {
 }
 
 .topics-container {
-  position: relative;
-  margin-top: 25.3rem;
-  margin-left: 43.6vw;
-  width: 52vw;
+  position: absolute;
+  top: 25.3rem;
+  left: 39.2rem;
+  width: 44rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  font-family: montserrat, sans-serif;
 }
 .topics-container div {
   padding-top: 0.2rem;
@@ -135,16 +136,15 @@ a:hover {
 
 #hr-topics {
   position: absolute;
-  top: 30.4rem;
-  left: 50vw;
-  margin-left: -2.9rem;
+  top: 30.5rem;
+  left: 40.1rem;
 }
 
 .articals-container {
-  position: relative;
-  margin-top: 1.8rem;
-  margin-left: 44vw;
-  width: 52vw;
+  position: absolute;
+  top: 32rem;
+  left: 39.7rem;
+  width: 44rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -347,7 +347,7 @@ footer {
   position: absolute;
   display: flex;
   top: 22rem;
-  right: 2.9rem;
+  left: 69.2rem;
   align-items: center;
 }
 

@@ -4,7 +4,7 @@
 #index {
     hr {
         margin-top: 0.5rem;
-        width: 50vw;
+        width: 42.7rem;
         border-top: 0.5px solid #707070;
         border-bottom: none;
     }
@@ -12,7 +12,7 @@
 #index__heading {
     position: absolute;
     top: 8.8rem;
-    left: 46.5vw;
+    left: 40rem;
     width: 65rem;
     cursor: default;
     h2 {
@@ -35,13 +35,14 @@
     z-index: -1;
 }
 .topics-container {
-    position: relative;
-    margin-top: 25.3rem;
-    margin-left: 43.6vw;
-    width: 52vw;
+    position: absolute;
+    top: 25.3rem;
+    left: 39.2rem;
+    width: 44rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    font-family: montserrat, sans-serif;
     div {
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
@@ -64,15 +65,14 @@
 }
 #hr-topics {
     position: absolute;
-    top: 30.4rem;
-    left: 50vw;
-    margin-left: -2.9rem;
+    top: 30.5rem;
+    left: 40.1rem;
 }
 .articals-container {
-    position: relative;
-    margin-top: 1.8rem;
-    margin-left: 44vw;
-    width: 52vw;
+    position: absolute;
+    top: 32rem;
+    left: 39.7rem;
+    width: 44rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
