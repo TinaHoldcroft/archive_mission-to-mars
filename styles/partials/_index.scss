@@ -12,7 +12,8 @@
 #index__heading {
     position: absolute;
     top: 8.8rem;
-    left: 40rem;
+    left: 50vw;
+    margin-left: -2.8rem;
     width: 65rem;
     cursor: default;
     h2 {
@@ -28,7 +29,8 @@
 #images__astronaut {
     position: absolute;
     top: -6rem;
-    left: -4rem;
+    left: 50vw;
+    margin-left: -48rem;
     width: 60rem;
     filter: grayscale(100%) brightness(0.70);
     transform: rotate(-35deg);
@@ -37,7 +39,8 @@
 .topics-container {
     position: absolute;
     top: 25.3rem;
-    left: 39.2rem;
+    left: 50vw;
+    margin-left: -3.5rem;
     width: 44rem;
     display: flex;
     flex-flow: row nowrap;
@@ -66,12 +69,14 @@
 #hr-topics {
     position: absolute;
     top: 30.5rem;
-    left: 40.1rem;
+    left: 50vw;
+    margin-left: -2.8rem;
 }
 .articals-container {
     position: absolute;
     top: 32rem;
-    left: 39.7rem;
+    left: 50vw;
+    margin-left: -3.5rem;
     width: 44rem;
     display: flex;
     flex-flow: row nowrap;
