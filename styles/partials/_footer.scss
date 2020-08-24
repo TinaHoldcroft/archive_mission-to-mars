@@ -1,4 +1,17 @@
-footer {
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0rem;
+    left: 0vw;
+    align-items: center;
+    background: #242424;
+    width: 100vw;
+    height: 4rem;
+    padding-right: 1rem;
+    margin-top: 5rem;
+}
+#index__footer {
     position: absolute;
     display: flex;
     top: 22rem;

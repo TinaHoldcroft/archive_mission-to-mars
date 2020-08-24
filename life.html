@@ -5,30 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- SEO -->
         <meta name="author" content="Tina Mary Holdcroft">
-        <meta name="description" content="Microsite for NASA's Mars Exploration Program">
+        <meta name="description" content="Life on Mars">
 		<meta name="keywords" content="Microsite, Mission to Mars, The Red Planet, Mars, Rover, Orbiter">
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<script src="https://kit.fontawesome.com/a83d77d417.js" crossorigin="anonymous"></script>
-		<!-- sharing link display -->
-		<meta property="og:image" content="http://tinamary.com/portfolio/mission-to-mars/styles/images/astronaut.png">
-		<meta property="og:title" content="Mission to Mars">
-		<meta property="og:description" content="Mars Exploration Program microsite">
-		<meta property="og:url" content="http://tinamary.com/portfolio/mission-to-mars/index.html">
-		<meta property="og:type" content="website">
 		<!-- browser design -->
 		<link rel="icon" href="styles/images/mars.gif" type="image/gif" sizes="16x16"> <!-- Favicon -->
 		<meta name="theme-color" content="#242424"> <!-- color of browser banner on phone -->
-		<title>Mission to Mars</title> <!-- page title -->
+		<title>Life on Mars | Mission to Mars</title> <!-- page title -->
     </head>
 
-    <body id="index__body">
+    <body>
         <header>
 			<!-- current page -->
 			<div class="page-overview">
-				<h3><span class="strong"><a href="https://mars.nasa.gov/" target="_blank">NASA</a></span><span> | Mars Exploration Program</span></h3>
+				<h3><span class="strong"><a href="index.html">MISSION TO MARS</a></span><span> | Life on Mars</span></h3>
 			</div>
 			<!-- search table -->
 			<table id="searchTable" class="--hide">
@@ -69,42 +63,51 @@
             </nav>
 		</header>
 		
-		<main id="index">
-			<img id="images__astronaut" src="styles/images/astronaut.png" alt="Astronaut">
-			<!-- heading -->
-			<div id="index__heading">
-				<h2>NASA Science</h2>
-				<h1>
-					<span class="txt-xl">Mission</span><br>
-					to <span class="txt-red">Mars</span>
-				</h1>
-				<hr>
+		<main id="life">
+			<div class="day-container">
+			<iframe src='https://mars.nasa.gov/embed/25200/' title="MAVEN footage" scrolling='no' frameborder='0'></iframe>
+			<!-- MARS WEATHER -->
+			<!-- TODAY -->
+			<div class="day">
+				<div><i class="fas fa-cloud-sun"></i></div>
+				<div>
+					<p><span class="day-sol">Error</span></p>
+					<p><span class="day-date"></span></p>
+				</div>
+				<div>
+					<p class="weather-button"><span class="day-high"><span class="calcTemp">Error</span></span> <a class="celsius-high switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-high" onclick="fahrenheit(this)">F</a></p>
+					<p class="weather-button"><span class="day-low"><span class="calcTemp">Error</span></span> <a class="celsius-low switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-low" onclick="fahrenheit(this)">F</a></p>
+				</div>
+				<div>
+					<p>Wind Speed: <span class="dayWind">Error</span></p>
+					<p>Pressure: <span class="dayPressure">Error</span></p>
+				</div>
 			</div>
-			<div class="topics-container">
-				<div><a href="#"><p>Perseverance is cruising through space for a touchdown on Mars on Febuary 18<sup>th</sup> 2021</p></a></div>
-				<div><a href="#"><p>Mars’ nightside atmosphere glows and pulsates in this data animation from MAVEN spacecraft observations</p></a></div>
-				<div><a href="#"><p>Since leaving Earth 15 years ago, NASA's Mars Reconnaissance Orbiter has reshaped our understanding of Mars</p></a></div>
-			</div>
-			<hr id="hr-topics">
-			<div class="articals-container">
-				<div class="articals-author"><p><span class="strong">Created by Tina Holdcroft</span> <br><span class="italic">This is a microsite dedicated to <br>NASA's Mars <br> Exploration <br>Program</span></p></div>
-				<div><p>The National Aeronautics and Space Administration (NASA) is an independent agency of the US Federal Government responsible for the civilian space program, aeronautics and aerospace research. NASA science is focused on better understanding Earth through the Earth Observing System.</p></div>
-				<div><p>The goal of the Mars Exploration Program is to explore Mars and to provide a continuous flow of scientific information and discovery through a carefully selected series of robotic orbiters, landers and mobile laboratories interconnected by a high-bandwidth Mars to Earth communications network. </p></div>
+		</div>
+			<!-- 7 DAY FORCAST -->
+			<div class="forcast">
+				<div class="forcast1"></div>
+				<div class="forcast2"></div>
+				<div class="forcast3"></div>
+				<div class="forcast4"></div>
+				<div class="forcast5"></div>
+				<div class="forcast6"></div>
+				<div class="forcast7"></div>
 			</div>
 		</main>
 
-		<footer id="index__footer">
+		<footer class="footer">
             <div id="SoMe">
                 <a id="Instagram" target="_blank" href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
                 <a id="Twitter" target="_blank" href="https://twitter.com/NASA"><i class="fab fa-twitter"></i></a>
 				<a id="LinkedIn" target="_blank" href="https://no.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
 				<a id="Facebook" target="_blank" href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-square"></i></a>
 				<a id="YouTube" target="_blank" href="https://www.youtube.com/user/NASAtelevision?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
-            </div>
+            </div>		
 	  	</footer>
 
 		<!-- JavaScript -->
-		<script src="scripts/index.js"></script>
+		<script src="scripts/life.js"></script>
 		<script src="scripts/navigation.js"></script>
 	</body>	
 </html>

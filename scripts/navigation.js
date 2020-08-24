@@ -20,3 +20,12 @@ $('.search-icon').click(function() {
     if($('#searchTable').hasClass("--show")) {
         $('#searchTable').removeClass('--show');
         $('#searchTable').addClass('--hide'); } });
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade"); }); });
