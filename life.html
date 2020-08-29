@@ -7,8 +7,11 @@
         <meta name="author" content="Tina Mary Holdcroft">
         <meta name="description" content="Life on Mars">
 		<meta name="keywords" content="Microsite, Mission to Mars, The Red Planet, Mars, Rover, Orbiter">
-		<!-- jQuery -->
+		<!-- jQuery/Ajax -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<script src="https://kit.fontawesome.com/a83d77d417.js" crossorigin="anonymous"></script>
@@ -64,28 +67,73 @@
 		</header>
 		
 		<main id="life">
+			<div class="split-slideshow">
+			<div class="slideshow">
+				<div class="slider">
+					<div class="item">
+						<img src="styles/images/slideshow__1.jpg">
+						<div class="slideshow-intro__heading"><h1>Life </br>on </br>Mars</h1></div>
+						<div class="slideshow-intro__txt">
+							<p>Mars is no place for the faint-hearted. Arid, rocky, cold and apparently lifeless, the Red Planet offers few hospitalities. Fans of extreme sports can rejoice, however, for the Red Planet will challenge even the hardiest souls among us. Home to the largest volcano in the solar system, the deepest canyon and crazy weather and temperature patterns, Mars looms as the ultimate lonely planet destination.</p>
+							<a href="#forcast">Today's weather report &#x2192; </a>
+						</div>
+					</div>
+					<div id="TheRedPlanet" class="item">
+						<img src="styles/images/slideshow__2.jpg">
+						<div class="slideshow-left__heading"><h1>The <span class="txt-red">Red</span></br> Planet</h1></div>
+						<div class="slideshow-left__txt">
+							<p>Mars is named after a mythological figure, Mars - the Roman God of War. It was known to the ancient Greeks as Ares, their god of war. This is thought to be because of the blood-red color of the planet which was also used by other ancient cultures. Chinese astronomers call Mars the <i>Fire Star</i> while ancient Egyptian priests called it <i>Her Desher</i> meaning <i>The Red One</i>.</p>
+						</div>
+					</div>
+				  	<div class="item">
+						  <img src="styles/images/slideshow__3.jpg">
+						  <div class="slideshow-right__heading"><h1>Missions</h1></div>
+						  <div class="slideshow-right__txt">
+							<p>Only 16 of the 39 Mars missions have been successful. Beginning with the USSR’s Marsnik 1 which was launched in 1960, 39 orbiters, landers and rovers have been to Mars but only 16 of those missions were a success. In 2016, Europe’s Exobiology on Mars program will search the planet for signs of Martian life as well as study the surface and terrain of the planet and map potential environmental hazards to future manned missions to Mars.</p>
+							<a href="history.html">Read more &#x2192; </a> 
+						</div>
+					</div>
+				  	<div id="Atmosphere" class="item">
+						  <img src="styles/images/slideshow__4.jpg">
+						  <div class="slideshow-left__heading"><h1>Atmosphere</h1></div>
+						  <div class="slideshow-left__txt">
+							  <p>The composition of Mars’ atmosphere is extremely similar to Venus’, one of the least hospitable atmospheres in all of the Solar System. The main component in both atmospheres is carbon dioxide (95% for Mars, 97% for Venus), yet a runaway greenhouse effect has taken hold of Venus, producing temperatures in excess of 480° C, while temperatures on Mars never exceed 20° C. Thus, something other than the composition is at work. The huge difference lies in the density of the two atmospheres. Whereas Venus’ atmosphere is exceedingly thick, Mars’ is quite thin. Simply put, Mars would resemble Venus if it possessed a thicker atmosphere.</p>
+						  </div>
+					</div>
+				  	<div class="item"><img src="styles/images/slideshow__5.jpg"></div>
+				  	<div class="item"><img src="styles/images/slideshow__6.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__7.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__8.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__9.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__10.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__11.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__12.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__13.jpg"></div>
+					<div class="item"><img src="styles/images/slideshow__14.jpg"></div>
+				</div>
+			</div>
+		</div>
+		<!-- MARS WEATHER -->
 			<div class="day-container">
-			<iframe src='https://mars.nasa.gov/embed/25200/' title="MAVEN footage" scrolling='no' frameborder='0'></iframe>
-			<!-- MARS WEATHER -->
 			<!-- TODAY -->
 			<div class="day">
 				<div><i class="fas fa-cloud-sun"></i></div>
 				<div>
-					<p><span class="day-sol">Error</span></p>
+					<p><span class="day-sol">Today: no data available</span></p>
 					<p><span class="day-date"></span></p>
 				</div>
 				<div>
-					<p class="weather-button"><span class="day-high"><span class="calcTemp">Error</span></span> <a class="celsius-high switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-high" onclick="fahrenheit(this)">F</a></p>
-					<p class="weather-button"><span class="day-low"><span class="calcTemp">Error</span></span> <a class="celsius-low switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-low" onclick="fahrenheit(this)">F</a></p>
+					<p class="weather-button"><span class="day-high"><span class="calcTemp"></span></span> <a class="celsius-high switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-high" onclick="fahrenheit(this)">F</a></p>
+					<p class="weather-button"><span class="day-low"><span class="calcTemp"></span></span> <a class="celsius-low switchTemp" onclick="celsius(this)">C</a> | <a class="fahrenheit-low" onclick="fahrenheit(this)">F</a></p>
 				</div>
 				<div>
-					<p>Wind Speed: <span class="dayWind">Error</span></p>
-					<p>Pressure: <span class="dayPressure">Error</span></p>
+					<p>Wind Speed: <span class="dayWind"></span></p>
+					<p>Pressure: <span class="dayPressure"></span></p>
 				</div>
 			</div>
 		</div>
 			<!-- 7 DAY FORCAST -->
-			<div class="forcast">
+			<div id="forcast" class="forcast">
 				<div class="forcast1"></div>
 				<div class="forcast2"></div>
 				<div class="forcast3"></div>
@@ -108,6 +156,7 @@
 
 		<!-- JavaScript -->
 		<script src="scripts/life.js"></script>
+		<script src="scripts/slideshow.js"></script>
 		<script src="scripts/navigation.js"></script>
 	</body>	
 </html>

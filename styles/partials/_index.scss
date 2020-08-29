@@ -89,18 +89,14 @@
         font-size: 0.9em;
         font-weight: 100;
     }
-    a:hover {
-        p { opacity: 0.5; }
-    }
+    a:hover { p { opacity: 0.5; } }
 }
 #hr-topics {
     position: absolute;
     top: 30.5rem;
     left: 50vw;
     margin-left: -2.8rem;
-    @media screen and (max-width: 1300px) {
-        display: none;
-    }
+    @media screen and (max-width: 1300px) { display: none; }
 }
 .articals-container {
     position: absolute;
@@ -111,9 +107,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    @media screen and (max-width: 1300px) {
-        display: none;
-    }
+    @media screen and (max-width: 1300px) { display: none; }
     div {
         flex: 1.2;
         padding-top: 0.2rem;
@@ -127,8 +121,6 @@
     div + div + div{ flex: 2; }
 }
 .articals-author {
-    @media screen and (max-width: 1300px) {
-        display: none;
-    }
+    @media screen and (max-width: 1300px) { display: none; }
     p { text-align: right; }
 }

@@ -1,33 +1,25 @@
-// Connect to weather API
+//weather API
 (function() {
     fetchWeather("https://api.nasa.gov/insight_weather/?api_key=PrX94SpxNWPcPdp8J8YuJRhYnCvWRzju5Avu3srO&feedtype=json&ver=1.0",
         function(weatherData){
             weatherForcast(weatherData);
-            marsWeather = weatherData;
-        });
-})()
+            marsWeather = weatherData; }); })();
 
 var marsWeather = null;
 
 function fetchWeather(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
-        if (xhr.readyState !== 4) {
-            return;
-        }
+        if (xhr.readyState !== 4) { return; }
         if (xhr.status >= 200 && xhr.status < 300) {
             var weatherData = JSON.parse(xhr.responseText);
-            callback(weatherData);
-        }
-        else {
-            alert('Error fetching weather data');
-        }
-    }
+            callback(weatherData); }
+        else { alert('Error fetching weather data'); } }
     xhr.open("GET", url);
     xhr.send();
 }
 
-// Weather display
+//weather display
 function weatherForcast(marsWeather) {
     var daySol = document.querySelector(".day-sol");
     var dayDate = document.querySelector(".day-date");
@@ -71,7 +63,7 @@ function weatherForcast(marsWeather) {
     }
 }
 
-// Change display to fahrenheit
+//change display to fahrenheit
 function fahrenheit(clickedButton) {
     var celsiusHigh = document.querySelector(".celsius-high");
     var celsiusLow = document.querySelector(".celsius-low");
@@ -100,7 +92,7 @@ function fahrenheit(clickedButton) {
     }
 }
 
-// Change display to celsius
+//change display to celsius
 function celsius(clickedButton) {
     var celsiusHigh = document.querySelector(".celsius-high");
     var celsiusLow = document.querySelector(".celsius-low");
