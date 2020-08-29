@@ -58,6 +58,16 @@ a:hover {
     font-style: italic;
     font-size: 0.8em;
 }
+.letter-xl {
+    float: left;
+    font-family: abril-fatface, serif;
+	font-size: 3em;
+	line-height: 1;
+	margin-top: 0.1em;
+	margin-bottom: -0.3em;
+    margin-right: 0.1em;
+    color: #A5161F;
+}
 /* Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;

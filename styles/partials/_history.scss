@@ -2,13 +2,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: wrap column;
-    margin: 1rem 0rem;
+    flex-flow: nowrap column;
+}
+.history-container {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 92vw;
+}
+.history-txt-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap row;
+    max-width: 92vw;
+    margin-top: 2rem;
+    div {
+        flex: 1;
+        text-align: justify;
+    }
+    p {
+        margin-bottom: 1rem;
+        margin-right: 5rem;
+    }
+}
+.timeline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap row;
     h1 {
         color: #191919;
+        font-size: 4em;
     }
     p, a {
         color: #8d8d8d;
+        text-align: left;
     }
 } 
 .history-col {
@@ -18,10 +47,10 @@
     align-items: center;
     justify-content: center;
     flex-flow: nowrap row;
-    margin: 2rem;
-    width: 30rem;
+    width: 25rem;
     p {
         max-width: 70%;
+        margin-bottom: 0rem;
     }
     div {
         flex: 2;
@@ -32,22 +61,22 @@
         margin-left: -5rem;
     }
     img {
-        width: 8.6rem;
-        height: 8.6rem;
+        width: 6.6rem;
+        height: 6.6rem;
         border-radius: 50%;
     }
 }
 .history-col:nth-child(odd) {
-    margin-right: 20rem;
+    margin-right: 15rem;
+    margin-bottom: 2rem;
 }
 .history-col:nth-child(even) {
-    margin-left: 20rem;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
 }
 #timeline {
     position: absolute;
-    left: 50vw;
-    margin-left: -0.5rem;
-    margin-top: 5rem;
+    left: 71.5vw;
     background-color: #8d8d8d;
-    height: 195rem;
+    height: 155rem;
 }
