@@ -66,6 +66,26 @@ a:hover {
   font-size: 0.8em;
 }
 
+/* Scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: #191919;
+  border: 0.5px solid #191919;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242424;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2424248f;
+}
+
 #index__body {
   overflow-y: hidden;
 }
@@ -815,6 +835,64 @@ nav li {
 #Atmosphere h1 {
   margin-top: 50vh;
   font-size: 4em;
+}
+
+#history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  margin: 1rem 0rem;
+}
+#history h1 {
+  color: #191919;
+}
+#history p, #history a {
+  color: #8d8d8d;
+}
+
+.history-col {
+  background-color: #242424;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: nowrap row;
+  margin: 2rem;
+  width: 30rem;
+}
+.history-col p {
+  max-width: 70%;
+}
+.history-col div {
+  flex: 2;
+  margin: 1rem 1.8rem;
+}
+.history-col div + div {
+  flex: 1;
+  margin-left: -5rem;
+}
+.history-col img {
+  width: 8.6rem;
+  height: 8.6rem;
+  border-radius: 50%;
+}
+
+.history-col:nth-child(odd) {
+  margin-right: 20rem;
+}
+
+.history-col:nth-child(even) {
+  margin-left: 20rem;
+}
+
+#timeline {
+  position: absolute;
+  left: 50vw;
+  margin-left: -0.5rem;
+  margin-top: 5rem;
+  background-color: #8d8d8d;
+  height: 195rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
