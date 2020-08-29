@@ -658,6 +658,7 @@ nav li {
   opacity: 0.6;
 }
 .slideshow .slick-dots li.slick-active button:before {
+  background-color: #A5161F;
   width: 40px;
   opacity: 1;
 }

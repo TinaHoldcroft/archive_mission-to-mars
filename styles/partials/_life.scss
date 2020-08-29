@@ -63,6 +63,7 @@
         &.slick-active {
             button {
                 &:before {
+                    background-color: #A5161F;
                     width: 40px;
                     opacity: 1;
                 }
