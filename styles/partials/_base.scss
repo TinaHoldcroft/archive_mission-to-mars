@@ -18,9 +18,7 @@ body {
     overflow-x: hidden;
     color: #ffffff;
 }
-p {
-    font-family: open-sans, sans-serif;
-}
+p { font-family: open-sans, sans-serif; }
 h1 {
     font-family: abril-fatface, serif;
     text-transform: uppercase;
@@ -33,9 +31,7 @@ h2 {
     font-weight: 400;
     font-size: 2em;
 }
-.txt-red {
-    color: #A5161F;
-}
+.txt-red { color: #A5161F; }
 .txt-xl {
     font-size: 1.4em;
     letter-spacing: 6px;
@@ -68,19 +64,14 @@ a:hover {
     margin-right: 0.1em;
     color: #A5161F;
 }
-/* Scrollbar*/
-::-webkit-scrollbar {
+::-webkit-scrollbar {//scrollbar
     width: 10px;
     background: #191919;
     border: 0.5px solid #191919;
-}
-::-webkit-scrollbar-track {
-    border-radius: 1px;
 }
 ::-webkit-scrollbar-thumb {
     background: #242424; 
     border-radius: 1px;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: #2424248f; 
-}
+::-webkit-scrollbar-track { border-radius: 1px; }
+::-webkit-scrollbar-thumb:hover { background: #2424248f; }

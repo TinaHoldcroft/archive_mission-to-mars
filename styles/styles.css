@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://use.typekit.net/zxx6njz.css");
 * {
   margin: 0;
@@ -77,19 +78,18 @@ a:hover {
   color: #A5161F;
 }
 
-/* Scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
   background: #191919;
   border: 0.5px solid #191919;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-thumb {
+  background: #242424;
   border-radius: 1px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #242424;
+::-webkit-scrollbar-track {
   border-radius: 1px;
 }
 
@@ -854,6 +854,7 @@ nav li {
   align-items: center;
   justify-content: center;
   flex-flow: nowrap column;
+  color: #8d8d8d;
 }
 
 .history-container {
@@ -861,6 +862,10 @@ nav li {
   align-items: center;
   justify-content: center;
   max-width: 92vw;
+}
+.history-container h1 {
+  margin-top: 1rem;
+  color: #ffffff;
 }
 
 .history-txt-container {
@@ -895,7 +900,7 @@ nav li {
   text-align: left;
 }
 
-.history-col {
+.timeline-col {
   background-color: #242424;
   position: relative;
   display: flex;
@@ -904,30 +909,30 @@ nav li {
   flex-flow: nowrap row;
   width: 25rem;
 }
-.history-col p {
+.timeline-col p {
   max-width: 70%;
   margin-bottom: 0rem;
 }
-.history-col div {
+.timeline-col div {
   flex: 2;
   margin: 1rem 1.8rem;
 }
-.history-col div + div {
+.timeline-col div + div {
   flex: 1;
   margin-left: -5rem;
 }
-.history-col img {
+.timeline-col img {
   width: 6.6rem;
   height: 6.6rem;
   border-radius: 50%;
 }
 
-.history-col:nth-child(odd) {
+.timeline-col:nth-child(odd) {
   margin-right: 15rem;
   margin-bottom: 2rem;
 }
 
-.history-col:nth-child(even) {
+.timeline-col:nth-child(even) {
   margin-left: 15rem;
   margin-bottom: 2rem;
 }
@@ -937,6 +942,33 @@ nav li {
   left: 71.5vw;
   background-color: #8d8d8d;
   height: 155rem;
+}
+
+section {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 50vh;
+  color: #8d8d8d;
+}
+section h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 30vw;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.placeholder:after {
+  content: "";
+  font-family: fontawesome;
+  font-size: 20em;
+  color: #fff;
+  position: absolute;
+  bottom: 20vh;
+  left: 0%;
+  z-index: 0;
+  color: #8d8d8d;
+  transform: rotate(30deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

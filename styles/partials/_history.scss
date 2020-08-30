@@ -3,12 +3,17 @@
     align-items: center;
     justify-content: center;
     flex-flow: nowrap column;
+    color: #8d8d8d;
 }
 .history-container {
     flex: 1;
     align-items: center;
     justify-content: center;
     max-width: 92vw;
+    h1 {
+        margin-top: 1rem;
+        color: #ffffff;
+    }
 }
 .history-txt-container {
     display: flex;
@@ -40,7 +45,7 @@
         text-align: left;
     }
 } 
-.history-col {
+.timeline-col {
     background-color: #242424;
     position: relative;
     display: flex;
@@ -66,11 +71,11 @@
         border-radius: 50%;
     }
 }
-.history-col:nth-child(odd) {
+.timeline-col:nth-child(odd) {
     margin-right: 15rem;
     margin-bottom: 2rem;
 }
-.history-col:nth-child(even) {
+.timeline-col:nth-child(even) {
     margin-left: 15rem;
     margin-bottom: 2rem;
 }
