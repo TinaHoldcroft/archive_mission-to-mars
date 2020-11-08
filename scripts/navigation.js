@@ -12,14 +12,21 @@ function myFunction() {
                 tr[i].style.display = "";
                 var element = document.getElementById("searchTable");
                 element.classList.add("--show");
-                element.classList.remove("--hide"); } 
+                element.classList.remove("--hide"); 
+            } 
             else {
-                tr[i].style.display = "none"; } } } }
+                tr[i].style.display = "none"; 
+            } 
+        } 
+    } 
+}
 
 $('.search-icon').click(function() {
     if($('#searchTable').hasClass("--show")) {
         $('#searchTable').removeClass('--show');
-        $('#searchTable').addClass('--hide'); } });
+        $('#searchTable').addClass('--hide'); 
+    } 
+});
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -28,4 +35,6 @@ const links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach(link => {
-        link.classList.toggle("fade"); }); });
+        link.classList.toggle("fade"); 
+    }); 
+});

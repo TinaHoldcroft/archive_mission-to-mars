@@ -1,25 +1,16 @@
-section {
-    display: block;
-    padding: 0;
-    margin: 0;
-    height: 50vh;
-    color: #8d8d8d;
-    h1 {
-        font-family: 'Courier New', Courier, monospace;
-        margin-left: 30vw;
-        margin-top: 20vh;
-        text-align: center;
+.timeline-content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 3rem;
+    padding-bottom: 2rem;
+    h1, p, a {
+        margin-bottom: 1rem;
     }
 }
-.placeholder:after {
-    content: "\f085";
-    font-family: fontawesome;
-    font-size: 20em;
-    color: #fff;
-    position: absolute;
-    bottom: 20vh;
-    left: 0%;
-    z-index: 0;
-    color: #8d8d8d;
-    transform: rotate(30deg);
+.countdown-container {
+    p {
+        color: #A5161F;
+        font-size: 2em;
+        font-weight: 900;
+    }
 }
